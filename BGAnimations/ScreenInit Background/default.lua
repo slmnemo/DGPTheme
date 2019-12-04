@@ -4,7 +4,7 @@ t[#t+1] = Def.ActorFrame {
   InitCommand=cmd(Center);
 	Def.Quad {
 		InitCommand=cmd(scaletoclipped,SCREEN_WIDTH,SCREEN_HEIGHT);
-		OnCommand=cmd(diffuse,color("0,0,0,1");diffusetopedge,color("0.1,0.1,0.1,1"));
+		OnCommand=cmd(diffuse,color("0,0,0,1");diffusetopedge,color("1,0.8,0.15"));
 	};
 };
 t[#t+1] = Def.ActorFrame {
@@ -12,7 +12,7 @@ t[#t+1] = Def.ActorFrame {
     Def.ActorFrame {
         Def.Quad {
             InitCommand=cmd(zoomto,SCREEN_WIDTH,128);
-            OnCommand=cmd(diffusealpha,1;sleep,1.5;linear,0.25;);
+            OnCommand=cmd(diffusealpha,0.5;sleep,1.5;linear,0.25);
         };
     };
 	Def.ActorFrame {
